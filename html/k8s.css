@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:lightblue;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center {
+    position:absolute;
+    width: 200px; /*image width */
+    height: 180px; /*image height */
+    left: 35%;
+    top: 35%;
+    margin-left:-auto; /*image width/2 */
+    margin-top:-256px; /*image height/2 */
+}
+
+.box{
+    position: absolute;
+    float: bottom;
+    left: 30%;
+    top: 10%;
+    margin-left: 225px;
+    width: 600px;
+    height: 250px;
+    background: rgb(240, 240, 241);
+    box-shadow: 4px 4px 7px 2px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+}
+
+.launch-pod-box{
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
+    /*top: 5%;*/
+    margin-left: 10px;
+    width: 200px;
+    height: 150px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+.launch-deploy-box{
+    position: absolute;
+    left: 21%;
+    bottom: 15%;
+    /*top: 5%;*/
+    margin-left: 10px;
+    width: 210px;
+    height: 150px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+.del-pod-box {
+    position: absolute;
+    left: 41%;
+    bottom: 15%;
+    /*top: 5%;*/
+    margin-left: 10px;
+    width: 200px;
+    height: 120px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+.del-deploy-box {
+    position: absolute;
+    left: 61%;
+    bottom: 15%;
+    /*top: 5%;*/
+    margin-left: 10px;
+    width: 220px;
+    height: 120px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.scale-box{
+    position: absolute;
+    left: 81%;
+    bottom: 15%;
+    /*top: 5%;*/
+    margin-left: 10px;
+    width: 220px;
+    height: 150px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+/* Styling btn class */
+
+.launch-pod-btn {
+    background: none;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 5%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.launch-deploy-btn {
+        background: none;
+        border: 1px solid black;
+        font-size: 20px;
+        padding: 10px 20px;
+        /*font-family: "montserrat";*/
+        cursor: pointer;
+       /* margin: 35px;*/
+        transition: 0.8s;
+        overflow: hidden;
+        left: 25%;
+        bottom: 5%;
+        position: absolute;
+}
+
+.del-pod-btn {
+    background: none;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 45%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.expose-deploy-btn {
+    background: none;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 60%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.del-deploy-btn {
+    background: none;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 70%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.scale-btn {
+        background: none;
+        border: 1px solid black;
+        font-size: 20px;
+        padding: 10px 20px;
+        /*font-family: "montserrat";*/
+        cursor: pointer;
+       /* margin: 35px;*/
+        transition: 0.8s;
+        overflow: hidden;
+        left: 87%;
+        bottom: 5%;
+        position: absolute;
+}
+
+.list-pods {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 3%;
+    bottom: 85%;
+    position: absolute;
+}
+
+.list-deployment {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 3%;
+    bottom: 75%;
+    position: absolute;
+}
+
+.list-svc {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 3%;
+    bottom: 65%;
+    position: absolute;
+}
+
+.delete-all {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 3%;
+    bottom: 55%;
+    position: absolute;
+}
+
+/* Styling btn1, btn2 class */
+.btn1, .btn2 {
+            color: black;
+            box-shadow: 4px 4px 7px 2px;
+            border-radius: 8px;
+}
+
+/* Creating animation effect */
+.btn1:hover, .btn2:hover {
+            color: #fff;
+}
+
+.launch-pod-btn::before,
+.launch-deploy-btn::before,
+.del-pod-btn::before,
+.expose-deploy-btn::before,
+.del-deploy-btn::before,
+.scale-btn::before,
+.list-pods::before,
+.list-deployment::before,
+.list-svc::before,
+.delete-all::before   {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: black;
+        z-index: -1;
+        transition: 0.8s;
+}
+
+.btn1::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+}
+
+.btn2::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}
+
+/* completion of animation effect code */

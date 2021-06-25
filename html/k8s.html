@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Commands</title>
+    <link rel="stylesheet" href="k8s.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <img src="k8s.png" class="center" />
+    <pre>
+     <textarea id="out" class="box" name="message" rows="20" cols="60">Output will be shown here ......</textarea>
+    </pre>
+
+    <div class="launch-pod-box">
+        <b>Enter Pod name : </b><input name="podname" id="in1" type="text" /> <br>
+        <b>Enter Image name : </b> <input name="pimage" id="in2" type="text" /> <br>
+    </div>
+    <button  onclick="launchPod();" class="launch-pod-btn btn1">Launch</button>
+    <script src="k8s.js"></script>
+
+    <div class="launch-deploy-box">
+        <b>Enter Deployment name : </b><input name="deployname" id="in3" type="text" /> <br>
+        <b>Enter Image name : </b> <input name="dimage" id="in4" type="text" /> <br>
+    </div>
+    <button  onclick="launchDeploy();" class="launch-deploy-btn btn1">Launch</button>
+    <script src="k8s.js"></script>
+
+    <div class="del-pod-box">
+        <b>Enter Pod name : </b><input name="del_podname" id="in5" type="text" /> <br>
+    </div>
+    <button  onclick="delPod();" class="del-pod-btn btn1">Delete</button>
+    <script src="k8s.js"></script>
+
+    <div class="del-deploy-box">
+        <b>Enter Deployment name : </b><input name="del_deployname" id="in6" type="text" /> <br>
+    </div>
+    <button  onclick="delDeploy();" class="del-deploy-btn btn1">Delete</button>
+    <button  onclick="expose();" class="expose-deploy-btn btn1">Expose</button>
+    <script src="k8s.js"></script>
+
+     <div class="scale-box">
+        <b>Enter Deployment name : </b><input name="deploy_name" id="in7" type="text" /> <br>
+        <b>Enter No. of Replicas : </b> <input name="replicas" id="in8" type="number" /> <br>
+    </div>
+    <button  onclick="scaleReplica();" class="scale-btn btn1">Scale</button>
+    <script src="k8s.js"></script>
+
+    <button  onclick="listPod();" class="list-pods btn2">List Pods</button>
+    <script src="k8s.js"></script>
+
+    <button  onclick="listDeploy();" class="list-deployment btn2">List Deployment</button>
+    <script src="k8s.js"></script>
+
+    <button  onclick="listService();" class="list-svc btn2">List svc</button>
+    <script src="k8s.js"></script>
+
+    <button  onclick="delAll();" class="delete-all btn2">Delete All Resources</button>
+    <script src="k8s.js"></script>
+
+</body>
+</html>
+                      
+

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+  
+<html>
+  
+<head>
+    <meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+  
+    <style>
+  
+        /* Styling background */
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+	*{
+  	  margin: 0;
+    	  padding: 0;
+  	  box-sizing: 0;
+ 	  font-family: "Poppins", sans-serif;
+	}
+
+	body{
+  	  background-color:lightblue;
+	  position: relative;
+   	  min-height: 100vh;
+  	  width: 100%;
+   	  overflow: hidden;
+	}
+              
+  
+        /* Styling container class */
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+  
+        /* Styling btn class */
+        .btn-doc {
+            background: none;
+            border: 1px dark blue;
+            font-size: 23px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.8s;
+	    right: 10%;
+            position: relative;
+            overflow: hidden;
+        }
+
+	.btn-k8s {
+            background: none;
+            border: 1px dark blue;
+            font-size: 23px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.8s;
+            right: 0%;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+  
+        /* Styling btn1, btn2 class */
+        .btn1,
+        .btn2 {
+            color: blue;
+        }
+  
+        /* Creating animation effect */
+        .btn1:hover,
+        .btn2:hover {
+            color: lightblue;
+        }
+          
+        .btn-doc::before,
+	.btn-k8s::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: darkblue;
+            z-index: -1;
+            transition: 0.8s;
+        }
+          
+        .btn1::before {
+            top: 0;
+            border-radius: 0 0 50% 50%;
+        }
+          
+        .btn2::before {
+            bottom: 0;
+            border-radius: 50% 50% 0 0;
+        }
+          
+        .btn1:hover::before,
+        .btn2:hover::before {
+            height: 180%;
+        }
+  
+        /* completion of animation effect code */
+    </style>
+</head>
+  
+<body> 
+    <!-- Create heading using h1 tag -->
+    <b><marquee style="color:navyblue; margin:10px; font-size:25px;"> <h1> Manage Docker and Kubernetes on one Click !!! </h1></marquee><b>
+    
+  
+    <div class="container">
+        <img style="float:left" height="400px" width="450px"  src='docker.png'/> <br>
+	
+	<a href="http://54.82.110.39/docker.html">
+	<button class="btn-doc btn1">Docker</button></a>
+
+	<a href="http://54.82.110.39/k8s.html">
+        <button class="btn-k8s btn2">Kubernetes</button></a>
+        
+	<img style= "float:right" height="300px" width="350px"  src='kubernetes.png'>
+        
+        
+    </div>
+   
+</body>
