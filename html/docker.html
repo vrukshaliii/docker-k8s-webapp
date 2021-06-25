@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Commands</title>
+    <link rel="stylesheet" href="docker.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <img src="https://img.icons8.com/ios-filled/150/000000/docker.png" class="center" />
+    <pre>
+    <textarea id="out" class="box" name="message" rows="20" cols="60">Output will be shown here ......</textarea>
+    </pre>
+
+    <div class="start-box">
+        <b>Enter OS name : </b><input name="osname" value="OS Name"  onfocus="this.value=''"  id="in1"  type="text" /> <br>
+        <b>Enter Image name : </b><input name="osimage" value="Image Name" onfocus="this.value=''" id="in2" type="text" /> <br>
+    </div>
+    <button class="start-btn btn1" onclick="startDocker();">Start</button>
+    <script src="docker.js"></script>
+
+    <div class="stop-box">
+        <b>Enter OS name : </b><input name="stop_os_name" id="in3" value="OS Name"  onfocus="this.value=''" onBlur="if(this.value == '') {this.value= 'OS Name'}"  type="text" /> <br>
+    </div>
+    <button class="stop-btn btn1" onclick="stopDocker();">Stop</button>
+    <script src="docker.js"></script>
+
+    <div class="del-box">
+        <b>Enter OS name : </b><input name="del_os_name" id="in4"  value="OS Name"  onfocus="this.value=''"  onBlur="if(this.value == '') {this.value= 'OS Name'}"  type="text" /> <br>
+    </div>
+    <button class="del-btn btn1" onclick="delDocker();">Delete</button>
+    <script src="docker.js"></script>
+
+
+    <button class="docker-info btn2" onclick="dockerInfo();">Docker Information</button>
+    <script src="docker.js"></script>
+
+    <button class="list-images btn2" onclick="listImages();">List Images</button>
+    <script src="docker.js"></script>
+
+    <button class="run-c btn2" onclick="listCont();">List Running Containers</button>
+    <script src="docker.js"></script>
+
+    <button class="all-c btn2" onclick="listAllCont();">List All Containers</button>
+    <script src="docker.js"></script>
+
+</body>
+</html>
+

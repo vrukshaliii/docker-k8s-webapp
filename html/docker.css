@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center {
+    position:absolute;
+    width: 200px; /*image width */
+    height: 200px; /*image height */
+    left:40%;
+    top:30%;
+    margin-left:-auto; /*image width/2 */
+    margin-top:-256px; /*image height/2 */
+}
+
+.box{
+     position: absolute;
+     float: bottom;
+     left: 30%;
+     top: 10%;
+     margin-left: 225px;
+     width: 700px;
+     height: 300px;
+     background: rgb(240, 240, 241);
+     box-shadow: 4px 4px 7px 2px;
+     border: 2px solid black;
+     text-align: center;
+     display: inline-block;
+ }
+
+.start-box{
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
+    /*top: 5%;*/
+    margin-left: 225px;
+    width: 200px;
+    height: 150px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+.stop-box{
+    position: absolute;
+    left: 35%;
+    bottom: 21%;
+    /*top: 5%;*/
+    margin-left: 225px;
+    width: 200px;
+    height: 100px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+.del-box {
+    position: absolute;
+    left: 55%;
+    bottom: 21%;
+    /*top: 5%;*/
+    margin-left: 225px;
+    width: 200px;
+    height: 100px;
+    background: rgb(240, 240, 241);
+    /*box-shadow: 4px 4px 7px 2px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+    /* Styling heading */
+h1 {
+    font-size: 35px;
+    color: darkblue;
+    text-align: center;
+}
+
+/* Styling btn class */
+
+.start-btn {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 32%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.stop-btn {
+        background: none;
+        border: 1px solid black;
+        font-size: 23px;
+        padding: 10px 20px;
+        /*font-family: "montserrat";*/
+        cursor: pointer;
+        margin: 35px;
+        transition: 0.8s;
+        overflow: hidden;
+        left: 51%;
+        bottom: 5%;
+        position: absolute;
+}
+
+.del-btn {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 73%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.docker-info {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 5%;
+    bottom: 65%;
+    position: absolute;
+}
+
+.list-images {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 5%;
+    bottom: 55%;
+    position: absolute;
+}
+
+.run-c {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 5%;
+    bottom: 45%;
+    position: absolute;
+}
+
+.all-c {
+    background: none;
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 10px 20px;
+    /*font-family: "montserrat";*/
+    cursor: pointer;
+   /* margin: 35px;*/
+    transition: 0.8s;
+    overflow: hidden;
+    left: 5%;
+    bottom: 35%;
+    position: absolute;
+}
+
+/* Styling btn1, btn2 class */
+.btn1, .btn2 {
+            color: black;
+            box-shadow: 4px 4px 7px 2px;
+            border-radius: 8px;
+}
+
+/* Creating animation effect */
+.btn1:hover, .btn2:hover {
+            color: #fff;
+}
+
+.start-btn::before,
+.stop-btn::before,
+.del-btn::before,
+.docker-info::before,
+.list-images::before,
+.run-c::before,
+.all-c::before   {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: black;
+        z-index: -1;
+        transition: 0.8s;
+}
+
+.btn1::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+}
+
+.btn2::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}
+
+/* completion of animation effect code */
+
